@@ -1,0 +1,87 @@
+:root {
+  --gallery-bg: #EDEAE3; 
+  --gallery-ink: #1B1814;
+  --gallery-accent: #6E2A32;
+  --gallery-muted: #8A8175;
+  --gallery-line: #D9D4C8;
+  --gallery-body: #4A453D;
+  --gallery-footer-muted: #C9C3B6;
+}
+
+.gallery-page {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--gallery-bg);
+  color: var(--gallery-ink);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.gallery-serif {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.gallery-header {
+  border-bottom: 1px solid var(--gallery-line);
+}
+
+.gallery-nav a {
+  color: var(--gallery-body);
+}
+
+.gallery-eyebrow {
+  color: var(--gallery-accent);
+}
+
+.gallery-copy {
+  color: var(--gallery-body);
+}
+
+.gallery-cta {
+  border-bottom: 1px solid var(--gallery-ink);
+}
+
+.gallery-section {
+  border-top: 1px solid var(--gallery-line);
+}
+
+.gallery-artist {
+  color: var(--gallery-accent);
+}
+
+.gallery-meta {
+  color: var(--gallery-muted);
+}
+
+.gallery-footer {
+  background: var(--gallery-ink);
+  color: var(--gallery-bg);
+}
+
+.gallery-footer p {
+  color: var(--gallery-footer-muted);
+}
+
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-up.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade-up {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+.gallery-page a:focus-visible,
+.gallery-page button:focus-visible {
+  outline: 2px solid var(--gallery-accent);
+  outline-offset: 3px;
+}
