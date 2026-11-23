@@ -1,6 +1,7 @@
-
 import { useState } from "react";
 import "./../artCss/Home.css";
+
+//
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,8 +34,8 @@ function Home() {
           <a href="/contact" onClick={closeMenu}>Contact</a>
 
           <div className="nav-account-links">
-            <a href="/login" onClick={closeMenu}>Login</a>
-            <a href="/register" className="register-link" onClick={closeMenu}>
+            <a href="/log" onClick={closeMenu}>Login</a>
+            <a href="/Register" className="register-link" onClick={closeMenu}>
               Register
             </a>
           </div>

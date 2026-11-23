@@ -1,15 +1,21 @@
 import './App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
 import Home from './Homepages/Home';
+import Register from './Homepages/Register';
+
 
 function App() {
   return (
     <div className="App">
-      {/*
-      <div className="damn">
-        <h1>Suck Me</h1>
-      </div>*/}
+      <BrowserRouter>
 
-      <Home />
+        <Routes> 
+          <Route path="/" element={< Home />} />
+          <Route path="/register" element={< Register />} />
+        </Routes>
+        
+      </BrowserRouter>
     </div>
   );
 }
