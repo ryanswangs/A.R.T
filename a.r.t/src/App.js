@@ -1,8 +1,8 @@
-import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import Home from './Homepages/Home';
 import Register from './Homepages/Register';
+import Blog from './Homepages/Blog';
 
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
         <Routes> 
           <Route path="/" element={< Home />} />
           <Route path="/register" element={< Register />} />
+          <Route path="/blog" element={< Blog />} />
         </Routes>
         
       </BrowserRouter>
